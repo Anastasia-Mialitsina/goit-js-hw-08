@@ -1,8 +1,10 @@
 .gallery {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   width: 1128px;
-  display: flex;
   gap: 24px;
-  list-style: none;
 }
 .gallery-item {
   overflow: hidden;
@@ -13,7 +15,7 @@
 }
 .gallery-image {
   width: 360px;
-  height: 300px;
+  height: 200px;
   transition: transform 0.3s ease;
 }
 .gallery-image:hover {
